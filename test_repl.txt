@@ -1,0 +1,6 @@
+chutiye ye x hai 42
+bhauk x
+chutiye ye naam hai "Bhai"
+bhauk naam
+bsdk agar x > 40 kar: bhauk "Sahi hai!"
+nikal lawde
