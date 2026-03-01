@@ -16,7 +16,7 @@ export default function Documentation() {
           </h2>
           <p className="text-text-secondary leading-relaxed mb-4">
             KaleshScript is a fun, toy programming language that brings Delhi's slang language to code. 
-            It's built for entertainment and certainly NO LEARNING purposes, featuring everything that kids should not learn.
+            It's built for entertainment and certainly NO LEARNING purposes, featuring everything that kids should not learn. Don't cancel me. Read, code and laugh!
           </p>
         </section>
 
