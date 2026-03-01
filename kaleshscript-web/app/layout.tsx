@@ -10,8 +10,11 @@ const permanentMarker = Permanent_Marker({
 })
 
 export const metadata: Metadata = {
-  title: 'KaleshScript - Delhi ki Coding Language',
+  title: 'KaleshScript - Dilli ki apni Programming Language',
   description: 'Try KaleshScript online - A fun programming language with Delhi slang',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export const viewport = {
