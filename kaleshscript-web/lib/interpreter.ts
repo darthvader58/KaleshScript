@@ -43,8 +43,12 @@ class Lexer {
 
   private skipComment() {
     if (this.ch === '/' && this.peekChar() === '/') {
-      while (this.ch !== '\n' && this.ch !== '') {
+      this.readChar(); // skip second /
+      // Skip until newline or end of input
+      let currentChar = this.ch;
+      while (currentChar && !(currentChar === '\n' || currentChar === '\r')) {
         this.readChar();
+        currentChar = this.ch;
       }
     }
   }
