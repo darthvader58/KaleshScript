@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { examples } from '@/lib/examples';
 import { KaleshScriptInterpreter } from '@/lib/interpreter';
 import Documentation from '../components/Documentation';
@@ -38,21 +39,21 @@ export default function KaleshPage() {
     <div className="min-h-screen bg-dark-bg">
       {/* Header with Delhi street vibes */}
       <header className="bg-dark-surface border-b-2 border-neon-yellow shadow-lg">
-        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-2 sm:py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 sm:space-x-4">
-              <div className="w-1 h-10 sm:h-12 bg-neon-yellow rounded-full"></div>
+            <Link href="/" className="flex items-center space-x-2 sm:space-x-4 hover:opacity-80 transition-opacity">
+              <div className="w-1 h-8 sm:h-10 bg-neon-yellow rounded-full"></div>
               <div>
-                <h1 className="text-lg sm:text-2xl font-bold text-text-primary tracking-tight">
+                <h1 className="text-base sm:text-xl font-bold text-text-primary tracking-tight">
                   KaleshScript
                 </h1>
-                <p className="text-xs sm:text-sm text-neon-yellow font-medium">Delhi ki apni coding language</p>
+                <p className="text-xs text-neon-yellow font-medium">Delhi ki apni coding language</p>
               </div>
-            </div>
+            </Link>
             <div className="flex items-center space-x-2 sm:space-x-3">
               <button
                 onClick={() => setActiveTab('playground')}
-                className={`px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg font-medium transition-all text-sm sm:text-base ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium transition-all text-sm ${
                   activeTab === 'playground'
                     ? 'bg-neon-yellow text-dark-bg'
                     : 'text-text-secondary hover:text-text-primary hover:bg-dark-hover'
@@ -62,7 +63,7 @@ export default function KaleshPage() {
               </button>
               <a
                 href="/paddhai"
-                className="px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg font-medium transition-all text-text-secondary hover:text-text-primary hover:bg-dark-hover text-sm sm:text-base"
+                className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium transition-all text-text-secondary hover:text-text-primary hover:bg-dark-hover text-sm"
               >
                 Docs
               </a>
