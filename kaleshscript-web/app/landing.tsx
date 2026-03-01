@@ -99,7 +99,7 @@ export default function LandingPage() {
         {floatingWords.map(word => (
           <div
             key={word.id}
-            className="absolute font-mono font-bold text-neon-yellow transition-all duration-300 ease-out hidden sm:block"
+            className="absolute font-mono font-bold text-neon-yellow transition-all duration-300 ease-out"
             style={{
               left: `${word.x + word.offsetX}%`,
               top: `${word.y + word.offsetY}%`,
