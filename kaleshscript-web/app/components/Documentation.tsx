@@ -400,6 +400,23 @@ bhauk age`}
               <p className="text-text-tertiary text-sm mt-2">
                 In the web version, this will prompt for input via browser prompt dialog.
               </p>
+              <pre className="bg-dark-bg text-text-primary p-4 rounded-lg overflow-x-auto border border-dark-border font-mono text-sm mt-3">
+{`// Complete input example
+bhauk "What's your name?"
+chutiye ye naam hai Suna lawde()
+
+bhauk "Hello"
+bhauk naam
+
+bhauk "How old are you?"
+chutiye ye age hai Suna lawde()
+
+bhauk "You are"
+bhauk age
+bhauk "years old"
+
+nikal lawde`}
+              </pre>
             </div>
 
             {/* Exit */}

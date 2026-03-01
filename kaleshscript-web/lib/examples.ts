@@ -194,6 +194,26 @@ bhauk "Program continues!"
 nikal lawde`,
   },
   {
+    id: 'input',
+    title: 'User Input',
+    description: 'Get input from user',
+    code: `// Input example
+bhauk "What's your name?"
+chutiye ye naam hai Suna lawde()
+
+bhauk "Hello"
+bhauk naam
+
+bhauk "How old are you?"
+chutiye ye age hai Suna lawde()
+
+bhauk "You are"
+bhauk age
+bhauk "years old"
+
+nikal lawde`,
+  },
+  {
     id: 'arrays',
     title: 'Arrays',
     description: 'Working with arrays',
