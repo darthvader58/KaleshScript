@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'KaleshScript - Dilli ki apni Programming Language',
   description: 'Try KaleshScript online - A fun programming language with Delhi slang',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/momos.png',
   },
 }
 
