@@ -24,7 +24,7 @@ export default function PaddhaiPage() {
                 Playground
               </Link>
               <span className="px-5 py-2.5 rounded-lg font-medium bg-neon-yellow text-dark-bg">
-                Paddhai (Docs)
+                Docs
               </span>
             </div>
           </div>
