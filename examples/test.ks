@@ -33,9 +33,9 @@ bhauk person["name"]
 // Switch case
 chutiye ye feeling hai "happy"
 mood feeling {
-    case "happy":
+    dekh "happy":
         bhauk "Party karte hain!"
-    case "sad":
+    dekh "sad":
         bhauk "Daaru lao yaar"
     default:
         bhauk "Therapy le bhai"
@@ -48,3 +48,5 @@ try kar:
     bhauk "Lafda ho gaya!"
 
 bhauk "Program khatam!"
+
+nikal lawde

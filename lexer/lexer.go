@@ -61,8 +61,7 @@ const (
 	BADDH    = "baddh"
 	EXIT     = "nikal"
 	SWITCH   = "mood"
-	DEKH     = "dekh"
-	CASE     = "case"
+	CASE     = "dekh"
 	DEFAULT  = "default"
 	TRY      = "try"
 	KAR_TRY  = "kar"
@@ -269,8 +268,7 @@ func lookupIdent(ident string) TokenType {
 		"baddh":   BADDH,
 		"nikal":   EXIT,
 		"mood":    SWITCH,
-		"dekh":    DEKH,
-		"case":    CASE,
+		"dekh":    CASE,
 		"default": DEFAULT,
 		"try":     TRY,
 		"pakad":   PAKAD,

@@ -159,8 +159,8 @@ nikal lawde`,
 chutiye ye mood hai "happy"
 
 mood mood {
-    case "happy": bhauk "Party karte hain!"
-    case "sad": bhauk "Daaru lao yaar"
+    dekh "happy": bhauk "Party karte hain!"
+    dekh "sad": bhauk "Daaru lao yaar"
     default: bhauk "Chill maar"
 }
 

@@ -1,10 +1,10 @@
-# KaleshScript 🔥
+# KaleshScript
 
-**Delhi ki apni coding language!** Built with pure Delhi slang, memes, and street swagger energy.
+**Dilli ki apni coding language!** Built with pure Delhi slang, memes, and energy.
 
 ## What is KaleshScript?
 
-KaleshScript is a fun programming language that brings Delhi's iconic street language to code. It's built in Go and features all the essential programming constructs with a Delhi twist.
+KaleshScript is a fun programming language, made only for entertainment purposes. 
 
 ## Quick Start
 
@@ -74,10 +74,10 @@ aage baddh bc // continue
 
 ### Switch Case
 ```kaleshscript
-mood dekh {
-    case "happy":
+mood mood {
+    dekh "happy":
         bhauk "Party karte hain!"
-    case "sad":
+    dekh "sad":
         bhauk "Daaru lao yaar"
     default:
         bhauk "Therapy le bhai"

@@ -249,11 +249,6 @@ func (p *Parser) parseContinueStatement() Statement {
 func (p *Parser) parseSwitchStatement() Statement {
 	stmt := &SwitchStatement{Token: p.curToken}
 
-	// Skip optional "dekh" after "mood"
-	if p.peekToken.Type == lexer.DEKH {
-		p.nextToken()
-	}
-
 	p.nextToken()
 	stmt.Value = p.parseExpression()
 

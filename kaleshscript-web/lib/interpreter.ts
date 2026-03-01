@@ -112,7 +112,6 @@ class Lexer {
       'nikal': 'EXIT',
       'mood': 'SWITCH',
       'dekh': 'DEKH',
-      'case': 'CASE',
       'default': 'DEFAULT',
       'try': 'TRY',
       'pakad': 'PAKAD',
@@ -429,10 +428,8 @@ export class KaleshScriptInterpreter {
         return;
       }
 
-      // Switch: mood value { case ... }
+      // Switch: mood value { dekh ... }
       if (tok.type === 'SWITCH') {
-        i++;
-        if (tokens[i]?.type === 'DEKH') i++;
         
         const switchValue = this.evaluateExpression(tokens, i);
         i = switchValue.nextIndex;
@@ -442,7 +439,7 @@ export class KaleshScriptInterpreter {
         
         let matched = false;
         while (tokens[i]?.type !== 'RBRACE' && i < tokens.length) {
-          if (tokens[i].type === 'CASE') {
+          if (tokens[i].type === 'DEKH') {
             i++;
             const caseValue = this.evaluateExpression(tokens, i);
             i = caseValue.nextIndex;
@@ -593,7 +590,7 @@ export class KaleshScriptInterpreter {
             tokens[i].type === 'PRINT' || tokens[i].type === 'LOOP' ||
             tokens[i].type === 'SWITCH' || tokens[i].type === 'TRY' ||
             tokens[i].type === 'FUNCTION' || tokens[i].type === 'WARNA' ||
-            tokens[i].type === 'CASE' || tokens[i].type === 'DEFAULT' ||
+            tokens[i].type === 'DEKH' || tokens[i].type === 'DEFAULT' ||
             tokens[i].type === 'COMMA' || tokens[i].type === 'PAKAD') {
           return i;
         }
