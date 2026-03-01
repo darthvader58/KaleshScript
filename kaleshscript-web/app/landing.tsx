@@ -177,7 +177,7 @@ export default function LandingPage() {
 
         <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-xl mx-auto px-4 mb-6 sm:mb-8">
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-1">16+</div>
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-1">10+</div>
             <div className="text-xs sm:text-sm text-text-tertiary">Examples</div>
           </div>
           <div className="text-center">
