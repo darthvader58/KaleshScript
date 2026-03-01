@@ -17,6 +17,13 @@ interface FloatingWord {
 
 export default function LandingPage() {
   const [floatingWords, setFloatingWords] = useState<FloatingWord[]>([]);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('npm i -g kaleshscript');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const delhiWords = [
     'bsdk', 'bc', 'chutiye', 'lawde', 'bhauk', 'kaand', 
@@ -109,9 +116,9 @@ export default function LandingPage() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/30 via-dark-bg/60 to-dark-bg/80 pointer-events-none"></div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl w-full">
-        <div className="mb-6 sm:mb-8 flex justify-center">
+        <div className="mb-4 sm:mb-6 flex justify-center">
           <div className="inline-block text-center">
-            <h1 className="text-5xl sm:text-7xl md:text-9xl font-black text-neon-yellow mb-4 font-righteous" style={{ 
+            <h1 className="text-5xl sm:text-7xl md:text-9xl font-black text-neon-yellow mb-3 font-righteous" style={{ 
               textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3), 6px 6px 0px rgba(0, 0, 0, 0.2)',
               letterSpacing: '0.02em',
               transform: 'rotate(-2deg)'
@@ -120,15 +127,12 @@ export default function LandingPage() {
             </h1>
           </div>
         </div>
-
         
-        
-        <p className="text-base sm:text-lg md:text-xl text-text-secondary mb-8 sm:mb-12 max-w-2xl mx-auto px-2">
+        <p className="text-base sm:text-lg md:text-xl text-text-secondary mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
           Yeh language dilli se hai bc. Maze karo, aur baap se bakchodi nahi. Intended ONLY for entertainment purposes!
         </p>
 
-
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 mb-8 sm:mb-10">
           <Link
             href="/kalesh"
             className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-neon-yellow text-dark-bg font-bold text-lg sm:text-xl rounded-xl border-2 border-neon-yellow hover:bg-dark-bg hover:text-neon-yellow transition-all duration-300 text-center"
@@ -146,33 +150,47 @@ export default function LandingPage() {
           </a>
         </div>
 
-        <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-4">
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">16+</div>
-            <div className="text-xs sm:text-sm text-text-tertiary">Examples</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">100%</div>
-            <div className="text-xs sm:text-sm text-text-tertiary">Delhi Slang</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">1000%</div>
-            <div className="text-xs sm:text-sm text-text-tertiary">Bakchodi</div>
-          </div>
-        </div>
-
-        <div className="mt-8 sm:mt-12 max-w-xl mx-auto px-4">
-          <div className="bg-dark-elevated/50 border border-neon-yellow/30 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+        <div className="max-w-md mx-auto px-4 mb-6 sm:mb-8">
+          <div className="bg-dark-elevated/50 border border-neon-yellow/30 rounded-lg p-3 backdrop-blur-sm">
             <p className="text-text-secondary text-xs sm:text-sm text-center mb-2">Install globally:</p>
-            <div className="bg-dark-bg/80 rounded px-3 py-2">
-              <code className="text-neon-yellow text-xs sm:text-sm font-mono block text-center">
+            <div 
+              className="bg-dark-bg/80 rounded px-3 py-2 flex items-center justify-between gap-2 cursor-pointer hover:bg-dark-bg transition-colors group"
+              onClick={handleCopy}
+            >
+              <code className="text-neon-yellow text-xs sm:text-sm font-mono flex-1 text-center">
                 npm i -g kaleshscript
               </code>
+              <div className="flex-shrink-0">
+                {copied ? (
+                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4 text-text-tertiary group-hover:text-neon-yellow transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                )}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-12 text-text-tertiary text-xs sm:text-sm px-4">
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-xl mx-auto px-4 mb-6 sm:mb-8">
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-1">16+</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Examples</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-1">100%</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Delhi Slang</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-1">1000%</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Bakchodi</div>
+          </div>
+        </div>
+
+        <div className="text-text-tertiary text-xs sm:text-sm px-4">
           <p>Tere baap ne banayi hai, pyaar se ❤️. Entertainment purpose only! NOT FOR KIDS.</p>
         </div>
       </div>
