@@ -119,10 +119,10 @@ export default function KaleshPage() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
-                      onClick={() => setOutput('')}
+                      onClick={() => setCode('')}
                       className="bg-dark-elevated hover:bg-dark-hover border border-dark-border px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-semibold text-text-secondary hover:text-text-primary text-xs sm:text-sm transition-all"
                     >
-                      Reset
+                      Clear
                     </button>
                     <button
                       onClick={runCode}
