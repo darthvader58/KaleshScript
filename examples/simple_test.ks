@@ -22,3 +22,6 @@ bhauk numbers[0]
 bhauk numbers[2]
 
 bhauk "Program khatam!"
+
+
+nikal lawde

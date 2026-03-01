@@ -21,3 +21,6 @@ chutiye ye truth hai sahi
 bsdk agar truth kar: bhauk "Sahi hai!"
 
 bhauk "Demo complete!"
+
+
+nikal lawde

@@ -14,3 +14,6 @@ jab tak maa i < 10 na maane:
         ruk jaa bc
     
     bhauk i
+
+
+nikal lawde

@@ -20,6 +20,7 @@ const (
 	HASH_OBJ     = "HASH"
 	BREAK_OBJ    = "BREAK"
 	CONTINUE_OBJ = "CONTINUE"
+	EXIT_OBJ     = "EXIT"
 	CLASS_OBJ    = "CLASS"
 	INSTANCE_OBJ = "INSTANCE"
 )
@@ -142,6 +143,11 @@ type Continue struct{}
 
 func (c *Continue) Type() ObjectType { return CONTINUE_OBJ }
 func (c *Continue) Inspect() string  { return "continue" }
+
+type Exit struct{}
+
+func (e *Exit) Type() ObjectType { return EXIT_OBJ }
+func (e *Exit) Inspect() string  { return "exit" }
 
 type Class struct {
 	Name    string

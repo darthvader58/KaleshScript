@@ -54,3 +54,6 @@ warna:
 
 bhauk ""
 bhauk "=== Demo Complete ==="
+
+
+nikal lawde

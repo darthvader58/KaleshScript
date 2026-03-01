@@ -87,6 +87,13 @@ type ContinueStatement struct {
 func (cs *ContinueStatement) statementNode()       {}
 func (cs *ContinueStatement) TokenLiteral() string { return cs.Token.Literal }
 
+type ExitStatement struct {
+	Token lexer.Token
+}
+
+func (es *ExitStatement) statementNode()       {}
+func (es *ExitStatement) TokenLiteral() string { return es.Token.Literal }
+
 type SwitchStatement struct {
 	Token   lexer.Token
 	Value   Expression

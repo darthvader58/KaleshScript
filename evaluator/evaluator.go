@@ -15,6 +15,7 @@ var (
 	FALSE    = &object.Boolean{Value: false}
 	BREAK    = &object.Break{}
 	CONTINUE = &object.Continue{}
+	EXIT     = &object.Exit{}
 )
 
 func Eval(node parser.Node, env *object.Environment) object.Object {
@@ -58,6 +59,9 @@ func Eval(node parser.Node, env *object.Environment) object.Object {
 
 	case *parser.ContinueStatement:
 		return CONTINUE
+
+	case *parser.ExitStatement:
+		return EXIT
 
 	case *parser.SwitchStatement:
 		return evalSwitchStatement(node, env)
@@ -154,6 +158,8 @@ func evalProgram(program *parser.Program, env *object.Environment) object.Object
 				return result.(*object.ReturnValue).Value
 			case object.ERROR_OBJ:
 				return result
+			case object.EXIT_OBJ:
+				return NULL
 			}
 		}
 	}

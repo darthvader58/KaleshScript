@@ -72,6 +72,8 @@ func (p *Parser) parseStatement() Statement {
 		return p.parseTryStatement()
 	case lexer.CLASS:
 		return p.parseClassStatement()
+	case lexer.EXIT:
+		return p.parseExitStatement()
 	default:
 		return p.parseExpressionStatement()
 	}
@@ -242,6 +244,15 @@ func (p *Parser) parseContinueStatement() Statement {
 	}
 	if p.peekToken.Type == lexer.BC {
 		p.nextToken()
+	}
+	return stmt
+}
+
+func (p *Parser) parseExitStatement() Statement {
+	stmt := &ExitStatement{Token: p.curToken}
+	// Expect "lawde" after "nikal"
+	if !p.expectPeek(lexer.LAWDE) {
+		return nil
 	}
 	return stmt
 }

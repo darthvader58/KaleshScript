@@ -8,3 +8,6 @@ jab tak maa count < 5 na maane:
 
 bhauk "Loop done!"
 bhauk count
+
+
+nikal lawde

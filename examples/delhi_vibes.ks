@@ -39,3 +39,6 @@ bsdk agar status kar: bhauk "Sab sahi chal raha hai bhai!"
 bhauk ""
 bhauk "Code khatam! Milte hain phir se!"
 bhauk "Jai Hind! 🇮🇳"
+
+
+nikal lawde

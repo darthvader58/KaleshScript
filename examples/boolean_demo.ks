@@ -23,3 +23,6 @@ bsdk agar a < b kar:
 
 bsdk agar a == 10 kar:
     bhauk "A is exactly 10"
+
+
+nikal lawde
