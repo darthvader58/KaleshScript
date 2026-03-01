@@ -1,0 +1,37 @@
+{
+  "name": "kaleshscript",
+  "version": "1.0.0",
+  "description": "Delhi ki apni coding language - A fun programming language with Delhi slang",
+  "main": "cli/index.js",
+  "bin": {
+    "kaleshscript": "./cli/kaleshscript.js",
+    "ks": "./cli/kaleshscript.js"
+  },
+  "scripts": {
+    "postinstall": "node cli/install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kaleshscript",
+    "delhi",
+    "programming-language",
+    "interpreter",
+    "fun",
+    "educational"
+  ],
+  "author": "darthvader58",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darthvader58/kaleshscript.git"
+  },
+  "homepage": "https://kaleshscript.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}

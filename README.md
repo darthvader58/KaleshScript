@@ -4,7 +4,7 @@
 
 ## What is KaleshScript?
 
-KaleshScript is a fun programming language, made only for entertainment purposes. 
+KaleshScript is a fun programming language, made only for entertainment purposes. NOT FOR KIDS!
 
 ## Quick Start
 
@@ -199,4 +199,4 @@ MIT License - Have fun with it!
 
 ---
 
-**Disclaimer**: This is a fun educational project. The language uses Delhi street slang for entertainment purposes. No offense intended! 🙏
+**Disclaimer**: This is a fun educational project. The language uses Delhi slang for entertainment purposes. No offense intended! 🙏

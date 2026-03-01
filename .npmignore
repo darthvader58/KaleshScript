@@ -1,0 +1,36 @@
+# Source files
+*.go
+go.mod
+go.sum
+evaluator/
+lexer/
+object/
+parser/
+
+# Examples
+examples/
+
+# Web version
+kaleshscript-web/
+node_modules/
+
+# Build artifacts
+.next/
+*.test
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Docs
+README.md
+test_repl.txt
+
+# Keep only the CLI and binary
+!cli/
+!bin/
+!package.json

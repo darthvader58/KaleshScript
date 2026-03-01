@@ -121,12 +121,10 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <p className="text-xl sm:text-2xl md:text-3xl text-neon-yellow font-bold mb-3 sm:mb-4 px-2">
-          Dear Dilli waalon ke liye personal relatable fun toy programming language
-        </p>
+        
         
         <p className="text-base sm:text-lg md:text-xl text-text-secondary mb-8 sm:mb-12 max-w-2xl mx-auto px-2">
-          Yeh language dilli se hai behenchod. Baap se bakchodi nahi
+          Yeh language dilli se hai bc. Maze karo, aur baap se bakchodi nahi. Intended ONLY for entertainment purposes!
         </p>
 
 
@@ -163,8 +161,19 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-16 text-text-tertiary text-xs sm:text-sm px-4">
-          <p>Tere baap ne banaya hai, pyaar se.</p>
+        <div className="mt-8 sm:mt-12 max-w-xl mx-auto px-4">
+          <div className="bg-dark-elevated/50 border border-neon-yellow/30 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+            <p className="text-text-secondary text-xs sm:text-sm text-center mb-2">Install globally:</p>
+            <div className="bg-dark-bg/80 rounded px-3 py-2">
+              <code className="text-neon-yellow text-xs sm:text-sm font-mono block text-center">
+                npm i -g kaleshscript
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 sm:mt-12 text-text-tertiary text-xs sm:text-sm px-4">
+          <p>Tere baap ne banayi hai, pyaar se ❤️. Entertainment purpose only! NOT FOR KIDS.</p>
         </div>
       </div>
 
