@@ -117,12 +117,20 @@ export default function KaleshPage() {
                     </div>
                     <span className="font-medium text-text-primary text-xs sm:text-sm ml-2">code.ks</span>
                   </div>
-                  <button
-                    onClick={runCode}
-                    className="bg-neon-yellow hover:bg-neon-yellow/80 px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold text-dark-bg text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
-                  >
-                    Run
-                  </button>
+                  <div className="flex items-center space-x-2">
+                    <button
+                      onClick={() => setOutput('')}
+                      className="bg-dark-elevated hover:bg-dark-hover border border-dark-border px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-semibold text-text-secondary hover:text-text-primary text-xs sm:text-sm transition-all"
+                    >
+                      Reset
+                    </button>
+                    <button
+                      onClick={runCode}
+                      className="bg-neon-yellow hover:bg-neon-yellow/80 px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold text-dark-bg text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
+                    >
+                      Run
+                    </button>
+                  </div>
                 </div>
                 <div className="flex-1 bg-[#1e1e1e] min-h-0">
                   <Editor
