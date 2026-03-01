@@ -4,7 +4,7 @@ export default function Documentation() {
       {/* Header */}
       <div className="bg-neon-yellow p-6">
         <h1 className="text-3xl font-bold text-dark-bg">KaleshScript Documentation</h1>
-        <p className="text-dark-bg/80 mt-2">Complete language reference and guide - Delhi style!</p>
+        <p className="text-dark-bg/80 mt-2">Aagye nikamme? Achhe se paddh and phir code kar.</p>
       </div>
       
       <div className="p-8 space-y-12">
@@ -15,13 +15,8 @@ export default function Documentation() {
             What is KaleshScript?
           </h2>
           <p className="text-text-secondary leading-relaxed mb-4">
-            KaleshScript is a fun, educational programming language that brings Delhi's iconic street language to code. 
-            It's built for entertainment and learning, featuring all essential programming constructs with a Delhi twist.
-          </p>
-          <p className="text-text-secondary leading-relaxed">
-            Whether you're learning programming concepts or just want to have fun coding in Delhi slang, 
-            KaleshScript has got you covered. From variables to functions, loops to error handling - 
-            everything is here, just with more swag!
+            KaleshScript is a fun, toy programming language that brings Delhi's slang language to code. 
+            It's built for entertainment and certainly NO LEARNING purposes, featuring everything that kids must not learn.
           </p>
         </section>
 

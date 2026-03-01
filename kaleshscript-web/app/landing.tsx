@@ -85,14 +85,14 @@ export default function LandingPage() {
 
   return (
     <div 
-      className="min-h-screen bg-dark-bg relative overflow-hidden flex items-center justify-center"
+      className="min-h-screen bg-dark-bg relative overflow-hidden flex items-center justify-center px-4"
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {floatingWords.map(word => (
           <div
             key={word.id}
-            className="absolute font-mono font-bold text-neon-yellow transition-all duration-300 ease-out"
+            className="absolute font-mono font-bold text-neon-yellow transition-all duration-300 ease-out hidden sm:block"
             style={{
               left: `${word.x + word.offsetX}%`,
               top: `${word.y + word.offsetY}%`,
@@ -108,10 +108,10 @@ export default function LandingPage() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/30 via-dark-bg/60 to-dark-bg/80 pointer-events-none"></div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl">
-        <div className="mb-8 flex justify-center">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl w-full">
+        <div className="mb-6 sm:mb-8 flex justify-center">
           <div className="inline-block text-center">
-            <h1 className="text-7xl md:text-9xl font-black text-neon-yellow mb-4 font-righteous" style={{ 
+            <h1 className="text-5xl sm:text-7xl md:text-9xl font-black text-neon-yellow mb-4 font-righteous" style={{ 
               textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3), 6px 6px 0px rgba(0, 0, 0, 0.2)',
               letterSpacing: '0.02em',
               transform: 'rotate(-2deg)'
@@ -121,19 +121,19 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <p className="text-2xl md:text-3xl text-neon-yellow font-bold mb-4">
+        <p className="text-xl sm:text-2xl md:text-3xl text-neon-yellow font-bold mb-3 sm:mb-4 px-2">
           Dear Dilli waalon ke liye personal relatable fun toy programming language
         </p>
         
-        <p className="text-lg md:text-xl text-text-secondary mb-12 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-text-secondary mb-8 sm:mb-12 max-w-2xl mx-auto px-2">
           Yeh language dilli se hai behenchod. Baap se bakchodi nahi
         </p>
 
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
           <Link
             href="/kalesh"
-            className="px-10 py-5 bg-neon-yellow text-dark-bg font-bold text-xl rounded-xl border-2 border-neon-yellow hover:bg-dark-bg hover:text-neon-yellow transition-all duration-300"
+            className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-neon-yellow text-dark-bg font-bold text-lg sm:text-xl rounded-xl border-2 border-neon-yellow hover:bg-dark-bg hover:text-neon-yellow transition-all duration-300 text-center"
           >
             Kalesh Kar
           </Link>
@@ -142,36 +142,36 @@ export default function LandingPage() {
             href="https://github.com/darthvader58/kaleshscript"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-dark-elevated border-2 border-dark-border text-text-primary font-semibold text-lg rounded-lg hover:border-neon-yellow hover:bg-dark-hover transition-all"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-dark-elevated border-2 border-dark-border text-text-primary font-semibold text-base sm:text-lg rounded-lg hover:border-neon-yellow hover:bg-dark-hover transition-all text-center"
           >
             View Source
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+        <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-4">
           <div className="text-center">
-            <div className="text-3xl font-bold text-neon-yellow mb-2">16+</div>
-            <div className="text-sm text-text-tertiary">Examples</div>
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">16+</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Examples</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-neon-yellow mb-2">100%</div>
-            <div className="text-sm text-text-tertiary">Delhi Slang</div>
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">100%</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Delhi Slang</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-neon-yellow mb-2">1000%</div>
-            <div className="text-sm text-text-tertiary">Bakchodi</div>
+            <div className="text-2xl sm:text-3xl font-bold text-neon-yellow mb-2">1000%</div>
+            <div className="text-xs sm:text-sm text-text-tertiary">Bakchodi</div>
           </div>
         </div>
 
-        <div className="mt-16 text-text-tertiary text-sm">
+        <div className="mt-12 sm:mt-16 text-text-tertiary text-xs sm:text-sm px-4">
           <p>Tere baap ne banaya hai, pyaar se.</p>
         </div>
       </div>
 
-      <div className="absolute top-10 left-10 w-20 h-20 border-4 border-neon-yellow/20 rounded-full animate-pulse-glow"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 border-4 border-street-purple/20 rounded-full animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 right-20 w-16 h-16 bg-neon-yellow/10 rounded-lg rotate-45 animate-pulse-glow" style={{ animationDelay: '0.5s' }}></div>
-      <div className="absolute bottom-1/4 left-20 w-24 h-24 border-4 border-neon-yellow/20 rounded-lg animate-pulse-glow" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute top-10 left-10 w-16 sm:w-20 h-16 sm:h-20 border-4 border-neon-yellow/20 rounded-full animate-pulse-glow hidden sm:block"></div>
+      <div className="absolute bottom-10 right-10 w-24 sm:w-32 h-24 sm:h-32 border-4 border-street-purple/20 rounded-full animate-pulse-glow hidden sm:block" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 right-20 w-12 sm:w-16 h-12 sm:h-16 bg-neon-yellow/10 rounded-lg rotate-45 animate-pulse-glow hidden sm:block" style={{ animationDelay: '0.5s' }}></div>
+      <div className="absolute bottom-1/4 left-20 w-20 sm:w-24 h-20 sm:h-24 border-4 border-neon-yellow/20 rounded-lg animate-pulse-glow hidden sm:block" style={{ animationDelay: '1.5s' }}></div>
     </div>
   );
 }

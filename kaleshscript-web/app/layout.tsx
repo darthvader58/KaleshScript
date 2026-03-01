@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   description: 'Try KaleshScript online - A fun programming language with Delhi slang',
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 export default function RootLayout({
   children,
 }: {
