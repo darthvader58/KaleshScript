@@ -191,7 +191,7 @@ go build -o kaleshscript
 
 ## Contributing
 
-Feel free to add more Delhi slang and features! This is meant to be fun and educational.
+Feel free to add more Delhi slang and features! This is meant to be fun and NOT educational.
 
 ## License
 
@@ -199,4 +199,4 @@ MIT License - Have fun with it!
 
 ---
 
-**Disclaimer**: This is a fun educational project. The language uses Delhi slang for entertainment purposes. No offense intended! 🙏
+**Disclaimer**: This is a fun and definitely NOT an educational project. The language uses Delhi slang for entertainment purposes. No offense intended! 🙏
