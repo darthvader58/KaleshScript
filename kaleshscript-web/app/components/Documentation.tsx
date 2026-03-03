@@ -422,8 +422,8 @@ nikal lawde`}
             {/* Exit */}
             <div>
               <h3 className="text-xl font-semibold mb-3 text-neon-yellow">16. Exit Program (REQUIRED)</h3>
-              <div className="border-l-4 border-neon-orange rounded-lg p-6">
-              <h3 className="text-lg font-bold text-neon-orange mb-2">Critical Rule for Exit Program</h3>
+              <div className="bg-dark-elevated p-4 rounded-lg border-l-4 border-red-600">
+              <h3 className="text-lg font-bold text-red-600 mb-2">IMPORTANT Rule</h3>
                 <p className="text-text-primary">
                     Every KaleshScript program MUST end with <code className="bg-dark-elevated px-2 py-1 rounded text-neon-yellow">nikal lawde</code>. 
                     Without this statement, your program will throw an error and refuse to run.
@@ -608,8 +608,8 @@ nikal lawde`}
               </p>
             </div>
 
-            <div className="bg-dark-elevated p-4 rounded-lg border-l-4 border-purple-500">
-              <h4 className="font-semibold text-purple-400 mb-2">Null/Undefined Error</h4>
+            <div className="bg-dark-elevated p-4 rounded-lg border-l-4 border-yellow-600">
+              <h4 className="font-semibold text-yellow-600 mb-2">Null/Undefined Error</h4>
               <code className="text-text-primary text-sm block mb-2">"Khali dimaag"</code>
               <p className="text-text-secondary text-sm">
                 Translation: "Empty brain" - You're trying to use a variable that doesn't exist or has no value.
@@ -625,7 +625,7 @@ nikal lawde`}
             </div>
 
             <div className="bg-dark-elevated p-4 rounded-lg border-l-4 border-red-600">
-              <h4 className="font-semibold text-red-400 mb-2">Missing Exit Statement</h4>
+              <h4 className="font-semibold text-red-600 mb-2">Missing Exit Statement</h4>
               <code className="text-text-primary text-sm block mb-2">"Ye kya bakchodi likh di? Program must end with 'nikal lawde'"</code>
               <p className="text-text-secondary text-sm">
                 Every KaleshScript program MUST end with <code className="bg-dark-bg px-2 py-1 rounded text-xs">nikal lawde</code>. 
