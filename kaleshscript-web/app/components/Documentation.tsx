@@ -119,7 +119,7 @@ chutiye ye quot hai a / b     // 2
 
 bhauk sum`}
               </pre>
-              <div className="mt-3 bg-neon-orange/10 border border-neon-orange rounded-lg p-3">
+              <div className="mt-3 p-3">
                 <p className="text-sm text-text-secondary">
                   <strong className="text-neon-orange">Type Safety:</strong> Arithmetic operations require numbers. 
                   Trying to subtract a string from a boolean will throw: "Dimag use kar thoda: Cannot subtract string from boolean"
@@ -193,7 +193,7 @@ bhauk count  // Prints: 5
 chutiye ye i hai 0
 jab tak maa i < 3 na maane: i = i + 1`}
               </pre>
-              <div className="mt-3 bg-neon-orange/10 border border-neon-orange rounded-lg p-3">
+              <div className="mt-3 p-3">
                 <p className="text-sm text-text-secondary">
                   <strong className="text-neon-orange">Infinite Loop Protection:</strong> Loops are limited to 10,000 iterations. 
                   If exceeded, you'll get: "Lafda ho gaya: Infinite loop detected!"
@@ -422,8 +422,8 @@ nikal lawde`}
             {/* Exit */}
             <div>
               <h3 className="text-xl font-semibold mb-3 text-neon-yellow">16. Exit Program (REQUIRED)</h3>
-              <div className="bg-neon-orange/10 border-l-4 border-neon-orange rounded-lg p-6">
-              <h3 className="text-lg font-bold text-neon-orange mb-2">⚠️ Critical Rule</h3>
+              <div className="border-l-4 border-neon-orange rounded-lg p-6">
+              <h3 className="text-lg font-bold text-neon-orange mb-2">Critical Rule for Exit Program</h3>
                 <p className="text-text-primary">
                     Every KaleshScript program MUST end with <code className="bg-dark-elevated px-2 py-1 rounded text-neon-yellow">nikal lawde</code>. 
                     Without this statement, your program will throw an error and refuse to run.
