@@ -190,8 +190,18 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className="text-text-tertiary text-xs sm:text-sm px-4">
+        <div className="text-text-tertiary text-xs sm:text-sm px-4 mb-4">
           <p>Tere baap ne banayi hai, pyaar se ❤️. Entertainment purpose only! NOT FOR KIDS.</p>
+        </div>
+
+        {/* Footer with Feedback Link */}
+        <div className="text-center px-4 pb-8">
+          <a
+            href="/paddhai#feedback"
+            className="text-text-tertiary hover:text-neon-yellow text-xs sm:text-sm transition-colors underline"
+          >
+            Give Feedback
+          </a>
         </div>
       </div>
 

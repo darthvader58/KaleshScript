@@ -1,3 +1,5 @@
+import FeedbackForm from './FeedbackForm';
+
 export default function Documentation() {
   return (
     <div className="bg-dark-surface max-w-5xl mx-auto my-8 rounded-xl shadow-xl border border-dark-border overflow-hidden">
@@ -863,8 +865,13 @@ nikal lawde`}
           </div>
         </section>
 
+        {/* Feedback Form */}
+        <section id="feedback" className="pt-8">
+          <FeedbackForm />
+        </section>
+
         {/* Footer */}
-        <section className="text-center pt-8 border-t border-dark-border">
+        <section className="text-center pt-8 border-t border-dark-border mt-8">
           <p className="text-text-secondary mb-2">
             Tere baap ne mehnat se banayi hai
           </p>
