@@ -56,7 +56,7 @@ export default function FeedbackForm() {
       
       {submitted ? (
         <div className="bg-green-500/10 border border-green-500 rounded-lg p-4 text-center">
-          <p className="text-green-400 font-semibold">✓ Shukriya! Your feedback has been received.</p>
+          <p className="text-green-400 font-semibold">✓ Shukriya! Ab muh mein lele. Just kidding yaar. Your feedback has been received and is well-appreciated.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
